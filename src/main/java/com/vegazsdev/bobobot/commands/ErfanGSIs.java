@@ -340,19 +340,7 @@ public class ErfanGSIs extends Command {
                 try {
                     if (sfsetup.getSfConf("bot-send-announcement").equals("true")) {
                         try {
-                            bot.sendMessage2ID("*" + gsiCmdObj.getGsi() + " GSI*"
-                                            + "\nTo *Mi Max 3*"
-                                            + "\n\n*Information:*\n`" + descGSI
-                                            + "`\n" + generateLinks.toString()
-                                            + "\n[Vendor Installer](https://t.me/c/1409510437/1909)"
-                                            + "\n\n*Thanks to:*"
-                                            + "\n[Erfan](https://github.com/erfanoabdi/ErfanGSIs/graphs/contributors) for the tool"
-                                            + "\n[Deku for mod bot](https://t.me/ddeekuu)"
-                                            + "\n[VegaZS for bot source code](https://github.com/VegaBobo/Bot3)"
-                                            + "\n\nFollow[*TheCandyShop Updates Channel*](https://t.me/joinchat/AAAAAFQDbCXwMmNPVQOa5g)"
-                                            + "\nJoin [*TheCandyShop Support Group*](https://t.me/joinchat/RtbQOTevaPbTFfIs)"
-                                            + "\nDonate if you like my work [*TheCandyShop Donation Link*](https://paypal.me/spydermahn)"
-                                            + "\nSubscribe to [*Raw Tech Reviews*](https://www.youtube.com/channel/UCAEQ9l8zAXShNNIMOKJqTPA)"
+                            bot.sendMessage2ID(new StringBuilder().append("*").append(gsiCmdObj.getGsi()).append(" GSI*").append("\nTo *Mi Max 3*").append("\n\n*Information:*\n`").append(descGSI).append("`\n").append(generateLinks.toString()).append("\n[Vendor Installer](https://t.me/c/1409510437/1909)").append("\n\n*Thanks to:*").append("\n[Erfan](https://github.com/erfanoabdi/ErfanGSIs/graphs/contributors) for the tool").append("\n[Deku for mod bot](https://t.me/ddeekuu)").append("\n[VegaZS for bot source code](https://github.com/VegaBobo/Bot3)").append("\n\nFollow[*TheCandyShop Updates Channel*](https://t.me/joinchat/AAAAAFQDbCXwMmNPVQOa5g)").append("\nJoin [*TheCandyShop Support Group*](https://t.me/joinchat/RtbQOTevaPbTFfIs)").append("\nDonate if you like my work [*TheCandyShop Donation Link*](https://paypal.me/spydermahn).").append("\nSubscribe to [*Raw Tech Reviews*](https://www.youtube.com/channel/UCAEQ9l8zAXShNNIMOKJqTPA)").toString()
                                       Long.parseLong(sfsetup.getSfConf("bot-announcement-id")));
                         } catch (Exception e) {
                             LOGGER.error("bot-announcement-id looks wrong or not set");
