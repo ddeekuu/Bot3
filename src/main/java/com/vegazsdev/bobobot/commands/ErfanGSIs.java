@@ -330,7 +330,7 @@ public class ErfanGSIs extends Command {
                     generateLinks.append(" | ");
                 }
                 if (!ab.toString().trim().equals("")) {
-                    generateLinks.append("[AB](https://sourceforge.net/projects/").append(sfsetup.getSfConf("bot-sf-proj")).append("/files/").append(re).append(ab.toString()).append(")");
+                    generateLinks.append("[System Image](https://sourceforge.net/projects/").append(sfsetup.getSfConf("bot-sf-proj")).append("/files/").append(re).append(ab.toString()).append(")");
                 }
 
                 String descGSI = "" + new FileTools().readFile(infoGSI).trim();
@@ -349,7 +349,7 @@ public class ErfanGSIs extends Command {
                                     + "\n[Deku for mod bot](https://t.me/ddeekuu)"
                                     + "\n\n[*TheCandyShop Updates Channel*](https://t.me/joinchat/AAAAAFQDbCXwMmNPVQOa5g)"
                                     + "\n[*TheCandyShop Support Group*](https://t.me/joinchat/RtbQOTevaPbTFfIs)"
-                                    + "\n[*TheCandyShop Donation Link*](https://www.paypal.com/paypalme/spydermahn?locale.x)", update);
+                                    + "\n[*TheCandyShop Donation Link*](https://www.paypal.com/paypalme/spydermahn?locale.x)", update)
                                     , Long.parseLong(sfsetup.getSfConf("bot-announcement-id")));
                         } catch (Exception e) {
                             LOGGER.error("bot-announcement-id looks wrong or not set");
