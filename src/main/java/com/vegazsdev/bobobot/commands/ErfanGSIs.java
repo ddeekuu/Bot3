@@ -349,7 +349,7 @@ public class ErfanGSIs extends Command {
                                         + "\n[VegaZS for bot source code](https://github.com/VegaBobo/Bot3)"
                                         + "\n\n[*TheCandyShop Updates Channel*](https://t.me/joinchat/AAAAAFQDbCXwMmNPVQOa5g)"
                                         + "\n[*TheCandyShop Support Group*](https://t.me/joinchat/RtbQOTevaPbTFfIs)"
-                                        + "\n[*TheCandyShop Donation Link*](https://paypal.me/spydermahn)"
+                                        + "\n[*TheCandyShop Donation Link*](https://paypal.me/spydermahn)";
                                 , Long.parseLong(sfsetup.getSfConf("bot-announcement-id")));
                     } catch (Exception e) {
                         LOGGER.error("bot-announcement-id looks wrong or not set");
