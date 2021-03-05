@@ -271,7 +271,7 @@ public class ErfanGSIs extends Command {
 
                 // gzip files!
 
-                fullLogs.append("\n").append("Creating gzip...");
+                fullLogs.append("\n").append("Creating gzip my sir");
                 bot.editMessage(fullLogs.toString(), update, id);
 
                 String[] gzipFiles = listFilesForFolder(new File("ErfanGSIs" + "/output"));
@@ -321,7 +321,7 @@ public class ErfanGSIs extends Command {
 
                 StringBuilder generateLinks = new StringBuilder();
 
-                generateLinks.append("\n*Download* - ").append("[Folder](https://sourceforge.net/projects/").append(sfsetup.getSfConf("bot-sf-proj")).append("/files/").append(re).append(")\n");
+                generateLinks.append("\n*Download* - ");
 
                 if (!aonly.toString().trim().equals("")) {
                     generateLinks.append("[Aonly](https://sourceforge.net/projects/").append(sfsetup.getSfConf("bot-sf-proj")).append("/files/").append(re).append(aonly.toString()).append(")");
@@ -351,8 +351,8 @@ public class ErfanGSIs extends Command {
                                             + "\n[VegaZS for bot source code](https://github.com/VegaBobo/Bot3)"
                                             + "\n\n[*TheCandyShop Updates Channel*](https://t.me/joinchat/AAAAAFQDbCXwMmNPVQOa5g)"
                                             + "\n[*TheCandyShop Support Group*](https://t.me/joinchat/RtbQOTevaPbTFfIs)"
-                                            + "\n[*TheCandyShop Donation Link*](https://paypal.me/spydermahn)";
-                                    , Long.parseLong(sfsetup.getSfConf("bot-announcement-id")));
+                                            + "\n[*TheCandyShop Donation Link*](https://paypal.me/spydermahn)"
+                                      Long.parseLong(sfsetup.getSfConf("bot-announcement-id")));
                         } catch (Exception e) {
                             LOGGER.error("bot-announcement-id looks wrong or not set");
                         }
