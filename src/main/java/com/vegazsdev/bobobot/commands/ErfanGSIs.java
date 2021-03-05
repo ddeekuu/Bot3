@@ -347,9 +347,10 @@ public class ErfanGSIs extends Command {
                                     + "\n\n*Thanks to:*"
                                     + "\n[Erfan](https://github.com/erfanoabdi/ErfanGSIs/graphs/contributors) for the tool"
                                     + "\n[Deku for mod bot](https://t.me/ddeekuu)"
+                                    + "\n[VegaZS for bot source code](https://github.com/VegaBobo/Bot3)"
                                     + "\n\n[*TheCandyShop Updates Channel*](https://t.me/joinchat/AAAAAFQDbCXwMmNPVQOa5g)"
                                     + "\n[*TheCandyShop Support Group*](https://t.me/joinchat/RtbQOTevaPbTFfIs)"
-                                    + "\n[*TheCandyShop Donation Link*](https://www.paypal.com/paypalme/spydermahn?locale.x)", update)
+                                    + "\n[*TheCandyShop Donation Link*](https://www.paypal.com/paypalme/spydermahn?locale.x)"
                                     , Long.parseLong(sfsetup.getSfConf("bot-announcement-id")));
                         } catch (Exception e) {
                             LOGGER.error("bot-announcement-id looks wrong or not set");
