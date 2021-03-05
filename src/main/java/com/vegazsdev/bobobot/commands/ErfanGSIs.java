@@ -338,21 +338,24 @@ public class ErfanGSIs extends Command {
                 bot.sendReply("Job Finished", update);
 
                 try {
-                    if (sfsetup.getSfConf("bot-send-announcement").equals("true")) try {
-                        bot.sendMessage2ID("*" + gsiCmdObj.getGsi() + " GSI*"
-                                        + "\n*To Mi Max 3
-                                        + "\n\n*Information:*\n`" + descGSI
-                                        + "`\n" + generateLinks.toString()
-                                        + "\n\n*Thanks to:*"
-                                        + "\n[Erfan](https://github.com/erfanoabdi/ErfanGSIs/graphs/contributors) for the tool"
-                                        + "\n[Deku for mod bot](https://t.me/ddeekuu)"
-                                        + "\n[VegaZS for bot source code](https://github.com/VegaBobo/Bot3)"
-                                        + "\n\n[*TheCandyShop Updates Channel*](https://t.me/joinchat/AAAAAFQDbCXwMmNPVQOa5g)"
-                                        + "\n[*TheCandyShop Support Group*](https://t.me/joinchat/RtbQOTevaPbTFfIs)"
-                                        + "\n[*TheCandyShop Donation Link*](https://paypal.me/spydermahn)";
-                                , Long.parseLong(sfsetup.getSfConf("bot-announcement-id")));
-                    } catch (Exception e) {
-                        LOGGER.error("bot-announcement-id looks wrong or not set");
+                    if (sfsetup.getSfConf("bot-send-announcement").equals("true")) {
+                        try {
+                            bot.sendMessage2ID("*" + gsiCmdObj.getGsi() + " GSI*"
+                                            + "\nTo *Mi Max 3*"
+                                            + "\n\n*Information:*\n`" + descGSI
+                                            + "`\n" + generateLinks.toString()
+                                            + "\n[Vendor Installer](https://t.me/c/1409510437/1909)"
+                                            + "\n\n*Thanks to:*"
+                                            + "\n[Erfan](https://github.com/erfanoabdi/ErfanGSIs/graphs/contributors) for the tool"
+                                            + "\n[Deku for mod bot](https://t.me/ddeekuu)"
+                                            + "\n[VegaZS for bot source code](https://github.com/VegaBobo/Bot3)"
+                                            + "\n\n[*TheCandyShop Updates Channel*](https://t.me/joinchat/AAAAAFQDbCXwMmNPVQOa5g)"
+                                            + "\n[*TheCandyShop Support Group*](https://t.me/joinchat/RtbQOTevaPbTFfIs)"
+                                            + "\n[*TheCandyShop Donation Link*](https://paypal.me/spydermahn)";
+                                    , Long.parseLong(sfsetup.getSfConf("bot-announcement-id")));
+                        } catch (Exception e) {
+                            LOGGER.error("bot-announcement-id looks wrong or not set");
+                        }
                     }
                 } catch (Exception e) {
                     LOGGER.warn("bot-send-announcement is not set");
